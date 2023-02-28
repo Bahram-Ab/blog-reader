@@ -23,7 +23,7 @@ const Blog: NextPage<Props> = ({ posts }) => {
   return (
     <div className="mx-auto p-5 max-w-3xl space-y-5">
       {posts.map(({ title, meta, slug }) => {
-        return <BlogCard key={slug} title={title} desc={meta} />
+        return <BlogCard key={slug} title={title} desc={meta} slug={slug} />
       })}
     </div>
   )
